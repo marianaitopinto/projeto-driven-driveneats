@@ -1,77 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Driven Eats</title>  
+    <title>Driven Eats</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <!-- Barra fixa topo -->
     <header>
-        <p class="titulo">Driven Eats</p>
+        <p class="titulo">Japa Eats</p>
         <p class="subtitulo">Sua comida em 6 minutos</small></p>
     </header>
-    
+
     <!-- Pratos -->
 
     <p class="categoria1">Primeiro, seu prato</p>
 
     <div class="pratos comidas" data-identifier="dishes">
-        <button onclick="selecionarPrato('prato1')" class="prato1 opcao" data-identifier="food-option">
-            <img src="/arquivos/prato1.jpg" alt="Prato 1" class="foto-opcao"/>
+        <button onclick="selecionarPrato('prato1', 35.90, 'Combinado Top')" class="prato1 opcao"
+            data-identifier="food-option">
+            <img src="/arquivos/prato1.jpg" alt="Prato 1" class="foto-opcao" />
             <p class="titulo-opcao" data-identifier="food-title">Combinado Top</p>
             <p class="legenda-opcao">Um delicioso combinado para você</p>
-            <p class="preco-opcao" data-identifier="food-price">R$ 35,90</p>    
-            <ion-icon class="checkIcone" name="checkmark-circle-outline"></ion-icon>        
+            <p class="preco-opcao" data-identifier="food-price">R$ 35,90</p>
+            <ion-icon class="checkIcone" name="checkmark-circle-outline"></ion-icon>
         </button>
-        <button onclick="selecionarPrato('prato2')" class="prato2 opcao" data-identifier="food-option">
-            <img src="/arquivos/prato2.jpg" alt="Prato 2" class="foto-opcao"/>
+        <button onclick="selecionarPrato('prato2', 57.90, 'Combinado Premium')" class="prato2 opcao"
+            data-identifier="food-option">
+            <img src="/arquivos/prato2.jpg" alt="Prato 2" class="foto-opcao" />
             <p class="titulo-opcao" data-identifier="food-title">Premium</p>
             <p class="legenda-opcao">Um maravilhoso combinado premium</p>
             <p class="preco-opcao" data-identifier="food-price">R$ 57,90</p>
-            <ion-icon class="checkIcone" name="checkmark-circle-outline"></ion-icon> 
+            <ion-icon class="checkIcone" name="checkmark-circle-outline"></ion-icon>
         </button>
-        <button onclick="selecionarPrato('prato3')" class="prato3 opcao" data-identifier="food-option">            
-            <img src="/arquivos/prato3.jpg" alt="Prato 3" class="foto-opcao"/>
+        <button onclick="selecionarPrato('prato3', 74.90, 'Combinado Fome')" class="prato3 opcao"
+            data-identifier="food-option">
+            <img src="/arquivos/prato3.jpg" alt="Prato 3" class="foto-opcao" />
             <p class="titulo-opcao" data-identifier="food-title">Fome</p>
             <p class="legenda-opcao">Para você que está com fome</p>
-            <p class="preco-opcao" data-identifier="food-price">R$ 74,90</p>   
-            <ion-icon class="checkIcone" name="checkmark-circle-outline"></ion-icon> 
-        </button>     
-   </div>
+            <p class="preco-opcao" data-identifier="food-price">R$ 74,90</p>
+            <ion-icon class="checkIcone" name="checkmark-circle-outline"></ion-icon>
+        </button>
+    </div>
 
-   <!-- Bebidas -->
+    <!-- Bebidas -->
 
-   <p class="categorias">Agora, sua bebida</p>
+    <p class="categorias">Agora, sua bebida</p>
 
-   <div class="pratos bebidas" data-identifier="drinks">
-        <button onclick="selecionarBebida('bebida1')" class="bebida1 opcao" data-identifier="food-option">
-            <img src="/arquivos/bebida1.png" alt="Bebida 1" class="foto-opcao"/>
+    <div class="pratos bebidas" data-identifier="drinks">
+        <button onclick="selecionarBebida('bebida1', 6.90, 'Coca Lata')" class="bebida1 opcao"
+            data-identifier="food-option">
+            <img src="/arquivos/bebida1.png" alt="Bebida 1" class="foto-opcao" />
             <p class="titulo-opcao" data-identifier="food-title">Coca</p>
             <p class="legenda-opcao">Lata 350ml</p>
             <p class="preco-opcao" data-identifier="food-price">R$ 6,90</p>
-            <ion-icon class="checkIcone" name="checkmark-circle-outline"></ion-icon> 
+            <ion-icon class="checkIcone" name="checkmark-circle-outline"></ion-icon>
         </button>
-        <button onclick="selecionarBebida('bebida2')" class="bebida2 opcao" data-identifier="food-option">
-            <img src="/arquivos/bebida2.png" alt="Bebida 2" class="foto-opcao"/>
+        <button onclick="selecionarBebida('bebida2', 5.90, 'Guaraná Lata')" class="bebida2 opcao"
+            data-identifier="food-option">
+            <img src="/arquivos/bebida2.png" alt="Bebida 2" class="foto-opcao" />
             <p class="titulo-opcao" data-identifier="food-title">Guaraná</p>
             <p class="legenda-opcao">Lata 350ml</p>
-            <p class="preco-opcao" data-identifier="food-price">R$ 6,90</p> 
-            <ion-icon class="checkIcone" name="checkmark-circle-outline"></ion-icon>     
+            <p class="preco-opcao" data-identifier="food-price">R$ 5,90</p>
+            <ion-icon class="checkIcone" name="checkmark-circle-outline"></ion-icon>
         </button>
-        <button onclick="selecionarBebida('bebida3')" class="bebida3 opcao" data-identifier="food-option">
-            <img src="/arquivos/bebida3.png" alt="Bebida 3" class="foto-opcao"/>
+        <button onclick="selecionarBebida('bebida3', 4.90, 'Água')" class="bebida3 opcao" data-identifier="food-option">
+            <img src="/arquivos/bebida3.png" alt="Bebida 3" class="foto-opcao" />
             <p class="titulo-opcao" data-identifier="food-title">Água</p>
             <p class="legenda-opcao">Garrafa 500ml</p>
             <p class="preco-opcao" data-identifier="food-price">R$ 4,90</p>
-            <ion-icon class="checkIcone" name="checkmark-circle-outline"></ion-icon> 
-        </button>     
+            <ion-icon class="checkIcone" name="checkmark-circle-outline"></ion-icon>
+        </button>
     </div>
 
     <!-- Sobremesas -->
@@ -79,41 +87,65 @@
     <p class="categorias">Por fim, sua sobremesa</p>
 
     <div class="pratos sobremesas" data-identifier="desserts">
-        <button onclick="selecionarSobremesa('sobremesa1')" class="sobremesa1 opcao2" data-identifier="food-option">
-            <img src="/arquivos/sobremesa1.jpg" alt="Sobremesa 1" class="foto-opcao"/>
+        <button onclick="selecionarSobremesa('sobremesa1', 14.90, 'Haru Choco')" class="sobremesa1 opcao2"
+            data-identifier="food-option">
+            <img src="/arquivos/sobremesa1.jpg" alt="Sobremesa 1" class="foto-opcao" />
             <p class="titulo-opcao" data-identifier="food-title">Haru Chocolate</p>
             <p class="legenda-opcao">2 Harumakis de Chocolate</p>
             <p class="preco-opcao" data-identifier="food-price">R$ 14,90</p>
-            <ion-icon class="checkIcone" name="checkmark-circle-outline"></ion-icon> 
+            <ion-icon class="checkIcone" name="checkmark-circle-outline"></ion-icon>
         </button>
-        <button onclick="selecionarSobremesa('sobremesa2')" class="sobremesa2 opcao2" data-identifier="food-option">
-            <img src="/arquivos/sobremesa2.jpg" alt="Sobremesa 2" class="foto-opcao"/>
+        <button onclick="selecionarSobremesa('sobremesa2', 15.90, 'Haru Morango')" class="sobremesa2 opcao2"
+            data-identifier="food-option">
+            <img src="/arquivos/sobremesa2.jpg" alt="Sobremesa 2" class="foto-opcao" />
             <p class="titulo-opcao" data-identifier="food-title">Haru Morango</p>
             <p class="legenda-opcao">2 Harumakis de Morango</p>
-            <p class="preco-opcao" data-identifier="food-price">R$ 15,90</p>   
-            <ion-icon class="checkIcone" name="checkmark-circle-outline"></ion-icon>          
+            <p class="preco-opcao" data-identifier="food-price">R$ 15,90</p>
+            <ion-icon class="checkIcone" name="checkmark-circle-outline"></ion-icon>
         </button>
-        <button onclick="selecionarSobremesa('sobremesa3')" class="sobremesa3 opcao2" data-identifier="food-option">        
-            <img src="/arquivos/sobremesa3.png" alt="Sobremesa 3" class="foto-opcao"/>
+        <button onclick="selecionarSobremesa('sobremesa3', 11.90, 'Banana Caramelizada')" class="sobremesa3 opcao2"
+            data-identifier="food-option">
+            <img src="/arquivos/sobremesa3.png" alt="Sobremesa 3" class="foto-opcao" />
             <p class="titulo-opcao" data-identifier="food-title">Banana</p>
             <p class="legenda-opcao">Deliciosa Banana Caramelizada</p>
-            <p class="preco-opcao" data-identifier="food-price">R$ 11,90</p>  
-            <ion-icon class="checkIcone" name="checkmark-circle-outline"></ion-icon>       
-        </button>     
+            <p class="preco-opcao" data-identifier="food-price">R$ 11,90</p>
+            <ion-icon class="checkIcone" name="checkmark-circle-outline"></ion-icon>
+        </button>
     </div>
 
     <!-- Barra Inferior -->
     <footer>
-        <button  onclick="caixaConfirmar()">Selecione os 3 itens para fechar o pedido</button>
+        <button class="fecharPedido" onclick="caixaConfirmar()">Selecione os 3 itens para fechar o pedido</button>
     </footer>
 
 
     <!-- Caixa confirmação-->
-    <div class= "caixaConfirmacao caixaEscondida">
-        <p>Confirme seu pedido</p>
+    <div class="caixaConfirmacao caixaEscondida" data-identifier="confirmation-dialog">
+
+        <p class="tituloConfirmacao"><b>Confirme seu pedido</b></p>
+        <div class="escolha">
+            <p class="opcaoPrato">Comida</p>
+            <p class="precoPrato">2,90</p>
+        </div>
+        <div class="escolha">
+            <p class="opcaoBebida">Bebida</p>
+            <p class="precoBebida">2,90</p>
+        </div>
+        <div class="escolha">
+            <p class="opcaoSobremesa">Sobremesa</p>
+            <p class="precoSobremesa">2,90</p>
+        </div>
+        <div class="escolha total">
+            <p class="total">TOTAL</p>
+            <p class="precoTotal">R$ 2,90</p>
+        </div>
+        <button class="pedir" onclick="pedir()">Tudo certo, pode pedir!</button>
+        <p class="cancelar" onclick="cancelar()">Cancelar</p>
+
     </div>
 
-    <script src ="scripts.js"></script>
+    <script src="scripts.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
+
 </html>
